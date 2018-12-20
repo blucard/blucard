@@ -8,11 +8,25 @@ import (
 	"os/signal"
 	"time"
 
+	"github.com/blucard/blucard/internal/backend"
+	"github.com/blucard/blucard/internal/pkg/dynamo"
+	"github.com/blucard/blucard/internal/pkg/dynamo/dao"
 	"github.com/blucard/blucard/internal/server"
 )
 
 func main() {
-	srv, err := server.NewServer()
+	dynamoClient, err := dynamo.New()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	recordDB := dao.NewRecordDao(dynamoClient)
+
+	backendInstance := backend.NewBackend(&backend.NewBackendInput{
+		RecordDB: recordDB,
+	})
+
+	srv, err := server.NewServer(backendInstance)
 	if err != nil {
 		log.Fatalf("Failed to initialize the server: %v", err)
 	}

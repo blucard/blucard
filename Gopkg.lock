@@ -2,6 +2,58 @@
 
 
 [[projects]]
+  digest = "1:23054b773c486f5a2f2d480bfdedb2bb64a1462fc439ae84ada1524586bba4be"
+  name = "github.com/aws/aws-sdk-go"
+  packages = [
+    "aws",
+    "aws/awserr",
+    "aws/awsutil",
+    "aws/client",
+    "aws/client/metadata",
+    "aws/corehandlers",
+    "aws/credentials",
+    "aws/credentials/ec2rolecreds",
+    "aws/credentials/endpointcreds",
+    "aws/credentials/processcreds",
+    "aws/credentials/stscreds",
+    "aws/crr",
+    "aws/csm",
+    "aws/defaults",
+    "aws/ec2metadata",
+    "aws/endpoints",
+    "aws/request",
+    "aws/session",
+    "aws/signer/v4",
+    "internal/ini",
+    "internal/sdkio",
+    "internal/sdkrand",
+    "internal/sdkuri",
+    "internal/shareddefaults",
+    "private/protocol",
+    "private/protocol/json/jsonutil",
+    "private/protocol/jsonrpc",
+    "private/protocol/query",
+    "private/protocol/query/queryutil",
+    "private/protocol/rest",
+    "private/protocol/xml/xmlutil",
+    "service/dynamodb",
+    "service/dynamodb/dynamodbattribute",
+    "service/dynamodb/dynamodbiface",
+    "service/sts",
+  ]
+  pruneopts = "NUT"
+  revision = "cae66ecf52e0171f937f1fa80e12130fbb652474"
+  version = "v1.16.9"
+
+[[projects]]
+  digest = "1:6b60126417800f84a2a69f0b358527e0ea7489fc1c316eb49e0f404d3da8a6cb"
+  name = "github.com/cenkalti/backoff"
+  packages = ["."]
+  pruneopts = "NUT"
+  revision = "62661b46c4093e2c1f38d943e663db1a29873e80"
+  version = "v2.1.0"
+
+[[projects]]
   branch = "master"
   digest = "1:23edf5aaca7a1f15d68215ac41595c0732152757e9d7b3f282821222784049f1"
   name = "github.com/gin-contrib/sse"
@@ -29,6 +81,24 @@
   pruneopts = "NUT"
   revision = "aa810b61a9c79d51363740d207bb46cf8e620ed5"
   version = "v1.2.0"
+
+[[projects]]
+  digest = "1:31ab73ff9e04a548e7bca01f5f4a38072d35c3c102be20d12122fb1149720f70"
+  name = "github.com/guregu/dynamo"
+  packages = [
+    ".",
+    "internal/exprs",
+  ]
+  pruneopts = "NUT"
+  revision = "e38c48c566f44b8dbaa18ec7c429e43194f7233a"
+  version = "v1.0.0"
+
+[[projects]]
+  digest = "1:1f2aebae7e7c856562355ec0198d8ca2fa222fb05e5b1b66632a1fce39631885"
+  name = "github.com/jmespath/go-jmespath"
+  packages = ["."]
+  pruneopts = "NUT"
+  revision = "c2b33e84"
 
 [[projects]]
   digest = "1:8e36686e8b139f8fe240c1d5cf3a145bc675c22ff8e707857cdd3ae17b00d728"
@@ -72,6 +142,14 @@
 
 [[projects]]
   branch = "master"
+  digest = "1:76ee51c3f468493aff39dbacc401e8831fbb765104cbf613b89bef01cf4bad70"
+  name = "golang.org/x/net"
+  packages = ["context"]
+  pruneopts = "NUT"
+  revision = "e147a9138326bc0e9d4e179541ffd8af41cff8a9"
+
+[[projects]]
+  branch = "master"
   digest = "1:32268774426a8fc1c60cef12a2899163546b291e986351274c2165798a09b839"
   name = "golang.org/x/sys"
   packages = ["unix"]
@@ -97,6 +175,11 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/gin-gonic/gin"]
+  input-imports = [
+    "github.com/aws/aws-sdk-go/aws",
+    "github.com/aws/aws-sdk-go/aws/session",
+    "github.com/gin-gonic/gin",
+    "github.com/guregu/dynamo",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

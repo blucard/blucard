@@ -12,8 +12,9 @@ $ make setup      # download dependencies
 ```
 
 ```bash
-$ make localstack # run local AWS stack (run this command in a different window/tab)
-$ make dynamo     # creates local dynamo tables
+$ make localstack           # run local AWS stack (run this command in a different window/tab)
+$ pip install awscli-local  # only need to run once
+$ make dynamo               # creates local dynamo tables
 
 $ make dev        # start local server
 ```

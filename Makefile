@@ -5,7 +5,7 @@ dev:
 	go run cmd/blucard/main.go
 
 dynamo:
-	dynamodb create-table --cli-input-json file://create-records-table.json --region us-west-2
+	awslocal dynamodb create-table --cli-input-json file://create-records-table.json --region us-west-2
 
 localstack:
 	localstack start --docker

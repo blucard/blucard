@@ -11,7 +11,8 @@ import (
 func (b *backendImpl) GetRecord(c *gin.Context) {
 	record, err := b.recordDB.GetRecord(c.Param("uuid"))
 	if err != nil {
-		c.AbortWithError(http.StatusInternalServerError, err)
+		log.Println(errors.WithStack(err))
+		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 		return
 	}
 

@@ -9,6 +9,8 @@ import (
 type Backend interface {
 	GetRecord(ctx *gin.Context)
 	SetRecord(ctx *gin.Context)
+
+	GetQRCode(ctx *gin.Context)
 }
 
 type backendImpl struct {

@@ -133,6 +133,26 @@
   version = "1.0.1"
 
 [[projects]]
+  digest = "1:5cf3f025cbee5951a4ee961de067c8a89fc95a5adabead774f82822efabab121"
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  pruneopts = "NUT"
+  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
+  version = "v0.8.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:6d5f91e94b84274a726f31e8d98f1f789e9afae639bd7555d3ca610c966823c4"
+  name = "github.com/skip2/go-qrcode"
+  packages = [
+    ".",
+    "bitset",
+    "reedsolomon",
+  ]
+  pruneopts = "NUT"
+  revision = "cf5f9fa2f0d847edb8e038db7ed975e239095e1a"
+
+[[projects]]
   digest = "1:919fc2a81add8ac4a7a236dceaf3e4c29ba4df96d13c3f2ce13a4d0132ebefb8"
   name = "github.com/ugorji/go"
   packages = ["codec"]
@@ -180,6 +200,8 @@
     "github.com/aws/aws-sdk-go/aws/session",
     "github.com/gin-gonic/gin",
     "github.com/guregu/dynamo",
+    "github.com/pkg/errors",
+    "github.com/skip2/go-qrcode",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

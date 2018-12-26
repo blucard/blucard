@@ -25,6 +25,8 @@ func NewServer(backend backend.Backend) (*Server, error) {
 	r.GET("/record/:uuid", backend.GetRecord)
 	r.POST("/record/:uuid", backend.SetRecord)
 
+	r.GET("/qrcode", backend.GetQRCode)
+
 	srv := &http.Server{
 		Addr:    ":8000",
 		Handler: r,

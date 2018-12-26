@@ -21,14 +21,14 @@ func (b *backendImpl) GetRecord(c *gin.Context) {
 	})
 }
 
-type RecordInput struct {
+type recordInput struct {
 	Data string `json:"data"`
 }
 
 func (b *backendImpl) SetRecord(c *gin.Context) {
 	UUID := c.Param("uuid")
 
-	var record RecordInput
+	var record recordInput
 	if err := c.ShouldBindJSON(&record); err != nil {
 		log.Println(errors.WithStack(err))
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})

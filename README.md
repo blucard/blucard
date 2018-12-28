@@ -1,4 +1,6 @@
 ## Development
+[![Build Status](https://travis-ci.com/blucard/blucard.svg?branch=master)](https://travis-ci.com/blucard/blucard)
+
 Make sure [Go](https://ahmadawais.com/install-go-lang-on-macos-with-homebrew/) is installed and setup correctly
 
 In your Go workspace (`$GOPATH/github.com/blucard/`):

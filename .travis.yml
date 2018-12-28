@@ -3,4 +3,8 @@ language: go
 go:
   - "1.10.x"
 
+branches:
+  only:
+    - master
+
 script: make test

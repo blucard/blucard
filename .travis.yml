@@ -8,3 +8,11 @@ branches:
     - master
 
 script: make test
+
+notifications:
+  email: false
+
+after_success:
+  - ./scripts/notif.sh success
+after_failure:
+  - ./scripts/notif.sh failure

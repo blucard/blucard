@@ -83,6 +83,14 @@
   version = "v1.2.0"
 
 [[projects]]
+  branch = "master"
+  digest = "1:f14d1b50e0075fb00177f12a96dd7addf93d1e2883c25befd17285b779549795"
+  name = "github.com/gopherjs/gopherjs"
+  packages = ["js"]
+  pruneopts = "NUT"
+  revision = "d547d1d9531ed93dbdebcbff7f83e7c876a1e0ee"
+
+[[projects]]
   digest = "1:31ab73ff9e04a548e7bca01f5f4a38072d35c3c102be20d12122fb1149720f70"
   name = "github.com/guregu/dynamo"
   packages = [
@@ -109,6 +117,14 @@
   version = "v1.1.5"
 
 [[projects]]
+  digest = "1:395b1480ae42c3fec6fff19823e66e173819f85826811387f9045c88515a7f0f"
+  name = "github.com/jtolds/gls"
+  packages = ["."]
+  pruneopts = "NUT"
+  revision = "b4936e06046bbecbb94cae9c18127ebe510a2cb9"
+  version = "v4.20"
+
+[[projects]]
   digest = "1:bffa444ca07c69c599ae5876bc18b25bfd5fa85b297ca10a25594d284a7e9c5d"
   name = "github.com/mattn/go-isatty"
   packages = ["."]
@@ -131,6 +147,38 @@
   pruneopts = "NUT"
   revision = "4b7aa43c6742a2c18fdef89dd197aaae7dac7ccd"
   version = "1.0.1"
+
+[[projects]]
+  digest = "1:5cf3f025cbee5951a4ee961de067c8a89fc95a5adabead774f82822efabab121"
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  pruneopts = "NUT"
+  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
+  version = "v0.8.0"
+
+[[projects]]
+  digest = "1:1f0b284a6858827de4c27c66b49b2b25df3e16b031c2b57b7892273131e7dd2b"
+  name = "github.com/smartystreets/assertions"
+  packages = [
+    ".",
+    "internal/go-render/render",
+    "internal/oglematchers",
+  ]
+  pruneopts = "NUT"
+  revision = "7678a5452ebea5b7090a6b163f844c133f523da2"
+  version = "1.8.3"
+
+[[projects]]
+  digest = "1:7efd0b2309cdd6468029fa30c808c50a820c9344df07e1a4bbdaf18f282907aa"
+  name = "github.com/smartystreets/goconvey"
+  packages = [
+    "convey",
+    "convey/gotest",
+    "convey/reporting",
+  ]
+  pruneopts = "NUT"
+  revision = "9e8dc3f972df6c8fcc0375ef492c24d0bb204857"
+  version = "1.6.3"
 
 [[projects]]
   digest = "1:919fc2a81add8ac4a7a236dceaf3e4c29ba4df96d13c3f2ce13a4d0132ebefb8"
@@ -180,6 +228,8 @@
     "github.com/aws/aws-sdk-go/aws/session",
     "github.com/gin-gonic/gin",
     "github.com/guregu/dynamo",
+    "github.com/pkg/errors",
+    "github.com/smartystreets/goconvey/convey",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1

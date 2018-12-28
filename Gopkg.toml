@@ -37,3 +37,8 @@
 [[constraint]]
   name = "github.com/guregu/dynamo"
   version = "1.0.0"
+
+[[constraint]]
+  name = "github.com/smartystreets/goconvey"
+  version = "1.6.3"
+

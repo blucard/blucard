@@ -40,7 +40,7 @@ func (b *backendImpl) SetRecord(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{
+	c.JSON(http.StatusAccepted, gin.H{
 		"uuid": UUID,
 		"data": record.Data,
 	})

@@ -3,7 +3,9 @@ language: go
 go:
   - "1.10.x"
 
-if: type != push OR branch = master OR branch =~ /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+branches:
+  only:
+    - master
 
 script: make test
 

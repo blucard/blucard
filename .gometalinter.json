@@ -1,0 +1,16 @@
+{
+  "Deadline": "60s",
+  "DisableAll": true,
+  "Enable": [
+    "deadcode",
+    "vet",
+    "varcheck",
+    "structcheck",
+    "errcheck",
+    "ineffassign",
+    "goimports",
+    "misspell",
+    "unconvert"
+  ],
+  "Exclude": ["vendor/"]
+}

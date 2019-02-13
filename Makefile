@@ -18,3 +18,6 @@ setup:
 
 test:
 	go test -race $(TESTDIRS)
+
+lint:
+	gometalinter ./...

@@ -5,7 +5,7 @@ import(
 )
 
 // Schema for a table with a single entry containing a map from tier to delegate table name
-const schema = struct {
+const tieredMerchantOfferTableSchema = struct {
 	tableName string
 	hashKey string
 	mapName string
@@ -38,6 +38,6 @@ func (table *DDBTieredMerchantOfferTable) GetTiers() []merchant.OfferTier {
 	return tiers
 }
 
-func (table *DDBTieredMerchantOfferTable) GetOffers(merchantId merchant.MerchantId, tier merchant.OfferTier) []merchant.MerchantOffer {
-	return table.tierToDelegateTable[tier.Name()].GetOffers(merchantId)
+func (table *DDBTieredMerchantOfferTable) GetOffers(merchantID merchant.MerchantID, tier merchant.OfferTier) []merchant.MerchantOffer {
+	return table.tierToDelegateTable[tier.Name()].GetOffers(merchantID)
 }

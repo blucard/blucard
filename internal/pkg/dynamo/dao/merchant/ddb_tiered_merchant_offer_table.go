@@ -11,8 +11,8 @@ const tieredMerchantOfferTableSchema = struct {
 	mapName string
 	mapKey string
 }{
-	tableName: "TieredMerchantOfferTable"
-	hashKey: "hashKey"
+	tableName: "TieredMerchantOfferTable",
+	hashKey: "hashKey",
 	mapName: "tieredMerchantOfferMap"
 }
 

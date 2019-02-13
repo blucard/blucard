@@ -8,7 +8,7 @@ const merchantOfferTableSchema = struct {
 	hashKey string
 	rangeKey string
 }{
-	hashKey: "merchantId"
+	hashKey: "merchantId",
 	rangeKey: "offerId"
 }
 

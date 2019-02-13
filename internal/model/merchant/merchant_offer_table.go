@@ -1,7 +1,7 @@
 package merchant
 
 type OfferTier struct {
-	name string
+	Name string
 }
 
 // Retrieves the offers associated with each merchant for a single tier

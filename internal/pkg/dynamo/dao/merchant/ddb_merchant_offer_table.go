@@ -23,7 +23,7 @@ func NewDDBMerchantOfferTable(tableName string) *DDBMerchantOfferTable {
 	return &DDBMerchantOfferTable{tableName: tableName}
 }
 
-func (table *DDBMerchantOfferTable) GetOffers(merchant.MerchantID) []merchant.MerchantOffer {
+func (table *DDBMerchantOfferTable) GetOffers(merchantID merchant.MerchantID) []merchant.MerchantOffer {
 	// TODO: translate to DDB query
 	return nil
 }

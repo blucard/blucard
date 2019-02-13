@@ -39,5 +39,5 @@ func (table *DDBTieredMerchantOfferTable) GetTiers() []merchant.OfferTier {
 }
 
 func (table *DDBTieredMerchantOfferTable) GetOffers(merchantID merchant.MerchantID, tier merchant.OfferTier) []merchant.MerchantOffer {
-	return table.tierToDelegateTable[tier.Name()].GetOffers(merchantID)
+	return table.tierToDelegateTable[tier.Name].GetOffers(merchantID)
 }

@@ -10,7 +10,13 @@ const (
 	tableUUID = "uuid"
 )
 
-type RecordDao struct {
+//go:generate counterfeiter . RecordDao
+type RecordDao interface {
+	GetRecord(UUID string) (*Record, error)
+	SetRecord(UUID string, data string) error
+}
+
+type recordImpl struct {
 	table  db.Table
 	client *db.DB
 }
@@ -20,14 +26,16 @@ type Record struct {
 	Data string `dynamo:"data"`
 }
 
-func NewRecordDao(database *db.DB) *RecordDao {
+var _ RecordDao = &recordImpl{}
+
+func NewRecordDao(database *db.DB) RecordDao {
 	table := database.Table(tableName)
-	return &RecordDao{table, database}
+	return &recordImpl{table, database}
 }
 
-func (d *RecordDao) GetRecord(UUID string) (*Record, error) {
+func (r *recordImpl) GetRecord(UUID string) (*Record, error) {
 	var result *Record
-	err := d.table.Get(tableUUID, UUID).One(&result)
+	err := r.table.Get(tableUUID, UUID).One(&result)
 	if err == db.ErrNotFound {
 		return &Record{
 			UUID: "",
@@ -40,10 +48,10 @@ func (d *RecordDao) GetRecord(UUID string) (*Record, error) {
 	return result, nil
 }
 
-func (d *RecordDao) SetRecord(UUID string, data string) error {
+func (r *recordImpl) SetRecord(UUID string, data string) error {
 	item := Record{
 		UUID: UUID,
 		Data: data,
 	}
-	return d.table.Put(item).Run()
+	return r.table.Put(item).Run()
 }

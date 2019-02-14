@@ -1,0 +1,20 @@
+language: go
+
+go:
+  - "1.10.x"
+
+branches:
+  only:
+    - master
+
+script: make test
+
+notifications:
+  email: false
+
+after_success:
+  - chmod +x ./scripts/notif.sh
+  - ./scripts/notif.sh success
+after_failure:
+  - chmod +x ./scripts/notif.sh
+  - ./scripts/notif.sh failure

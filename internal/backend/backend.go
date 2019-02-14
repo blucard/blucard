@@ -14,14 +14,14 @@ type Backend interface {
 }
 
 type backendImpl struct {
-	recordDB *dao.RecordDao
+	recordDB dao.RecordDao
 }
 
 var _ Backend = &backendImpl{}
 
 // NewBackendInput pulls in the dependencies needed to setup the backend
 type NewBackendInput struct {
-	RecordDB *dao.RecordDao
+	RecordDB dao.RecordDao
 }
 
 // NewBackend creates a new backend instance

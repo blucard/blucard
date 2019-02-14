@@ -2,7 +2,7 @@
 
 
 [[projects]]
-  digest = "1:23054b773c486f5a2f2d480bfdedb2bb64a1462fc439ae84ada1524586bba4be"
+  digest = "1:700f2bfd7906f195d9dd5aebe49d44b1bac7a654423d49f27cf2a5248a050f3a"
   name = "github.com/aws/aws-sdk-go"
   packages = [
     "aws",
@@ -42,16 +42,16 @@
     "service/sts",
   ]
   pruneopts = "NUT"
-  revision = "cae66ecf52e0171f937f1fa80e12130fbb652474"
-  version = "v1.16.9"
+  revision = "24d2586ee6c7aa6a6efec818c2b8709db125ee4c"
+  version = "v1.16.34"
 
 [[projects]]
-  digest = "1:6b60126417800f84a2a69f0b358527e0ea7489fc1c316eb49e0f404d3da8a6cb"
+  digest = "1:cdee563173093e5ae7ab2a19c298e0904129719e1919a3c532b7bb0c3398b818"
   name = "github.com/cenkalti/backoff"
   packages = ["."]
   pruneopts = "NUT"
-  revision = "62661b46c4093e2c1f38d943e663db1a29873e80"
-  version = "v2.1.0"
+  revision = "1e4cf3da559842a91afcb6ea6141451e6c30c618"
+  version = "v2.1.1"
 
 [[projects]]
   branch = "master"
@@ -59,7 +59,7 @@
   name = "github.com/gin-contrib/sse"
   packages = ["."]
   pruneopts = "NUT"
-  revision = "22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae"
+  revision = "a7658810eb745c2f22927282dea478278103a897"
 
 [[projects]]
   digest = "1:7f029513a3c64c1fc923af79bf27d4fd0ce4fafdd13b421c1884d52c84e9c600"
@@ -73,6 +73,14 @@
   pruneopts = "NUT"
   revision = "b869fe1415e4b9eb52f247441830d502aece2d4d"
   version = "v1.3.0"
+
+[[projects]]
+  digest = "1:bde9f189072512ba353f3641d4839cb4c9c7edf421e467f2c03f267b402bd16c"
+  name = "github.com/gofrs/uuid"
+  packages = ["."]
+  pruneopts = "NUT"
+  revision = "6b08a5c5172ba18946672b49749cde22873dd7c2"
+  version = "v3.2.0"
 
 [[projects]]
   digest = "1:97df918963298c287643883209a2c3f642e6593379f97ab400c2a2e219ab647d"
@@ -91,15 +99,15 @@
   revision = "d547d1d9531ed93dbdebcbff7f83e7c876a1e0ee"
 
 [[projects]]
-  digest = "1:31ab73ff9e04a548e7bca01f5f4a38072d35c3c102be20d12122fb1149720f70"
+  digest = "1:954d551fd15a6519c64cbe87466af9eef2591510d25f10277f2fa6638ef4cfe5"
   name = "github.com/guregu/dynamo"
   packages = [
     ".",
     "internal/exprs",
   ]
   pruneopts = "NUT"
-  revision = "e38c48c566f44b8dbaa18ec7c429e43194f7233a"
-  version = "v1.0.0"
+  revision = "d8bb6a03e2ffcc58fbfe79ea2a44360ac9dbe002"
+  version = "v1.1.0"
 
 [[projects]]
   digest = "1:1f2aebae7e7c856562355ec0198d8ca2fa222fb05e5b1b66632a1fce39631885"
@@ -149,12 +157,24 @@
   version = "1.0.1"
 
 [[projects]]
-  digest = "1:5cf3f025cbee5951a4ee961de067c8a89fc95a5adabead774f82822efabab121"
+  digest = "1:14715f705ff5dfe0ffd6571d7d201dd8e921030f8070321a79380d8ca4ec1a24"
   name = "github.com/pkg/errors"
   packages = ["."]
   pruneopts = "NUT"
-  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
-  version = "v0.8.0"
+  revision = "ba968bfe8b2f7e042a574c888954fccecfa385b4"
+  version = "v0.8.1"
+
+[[projects]]
+  branch = "master"
+  digest = "1:d84fb712f1b90170c122e80599e274397cda404d55e833b03e58709e4057f5d3"
+  name = "github.com/skip2/go-qrcode"
+  packages = [
+    ".",
+    "bitset",
+    "reedsolomon",
+  ]
+  pruneopts = "NUT"
+  revision = "dc11ecdae0a9889dc81a343585516404e8dc6ead"
 
 [[projects]]
   digest = "1:1f0b284a6858827de4c27c66b49b2b25df3e16b031c2b57b7892273131e7dd2b"
@@ -181,12 +201,12 @@
   version = "1.6.3"
 
 [[projects]]
-  digest = "1:919fc2a81add8ac4a7a236dceaf3e4c29ba4df96d13c3f2ce13a4d0132ebefb8"
+  digest = "1:1ebf6fbb6c7fe00eaa4eb105cfe035e67cd7a03c7962011c99d4d0ef5cdce7ab"
   name = "github.com/ugorji/go"
   packages = ["codec"]
   pruneopts = "NUT"
-  revision = "b4c50a2b199d93b13dc15e78929cfb23bfdf21ab"
-  version = "v1.1.1"
+  revision = "8fd0f8d918c8f0b52d0af210a812ba882cc31a1e"
+  version = "v1.1.2"
 
 [[projects]]
   branch = "master"
@@ -194,15 +214,15 @@
   name = "golang.org/x/net"
   packages = ["context"]
   pruneopts = "NUT"
-  revision = "e147a9138326bc0e9d4e179541ffd8af41cff8a9"
+  revision = "3a22650c66bd7f4fb6d1e8072ffd7b75c8a27898"
 
 [[projects]]
   branch = "master"
-  digest = "1:32268774426a8fc1c60cef12a2899163546b291e986351274c2165798a09b839"
+  digest = "1:b1085269f659d40b582e254edea4b3ab5948e2e9b85669f0da05ef3469aac2ca"
   name = "golang.org/x/sys"
   packages = ["unix"]
   pruneopts = "NUT"
-  revision = "074acd46bca67915925527c07849494d115e7c43"
+  revision = "983097b1a8a340cd1cc7df17d735154d89e10b1a"
 
 [[projects]]
   digest = "1:0215407129c5f116ae8f6d3af64df59c39d3f606a72ef77a1e6ed874f92a8d9c"
@@ -229,6 +249,7 @@
     "github.com/gin-gonic/gin",
     "github.com/guregu/dynamo",
     "github.com/pkg/errors",
+    "github.com/skip2/go-qrcode",
     "github.com/smartystreets/goconvey/convey",
   ]
   solver-name = "gps-cdcl"

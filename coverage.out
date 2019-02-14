@@ -1,0 +1,20 @@
+mode: set
+github.com/blucard/blucard/internal/backend/backend.go:26.49,30.2 1 0
+github.com/blucard/blucard/internal/backend/record.go:11.49,13.16 2 1
+github.com/blucard/blucard/internal/backend/record.go:18.2,21.4 1 1
+github.com/blucard/blucard/internal/backend/record.go:13.16,16.3 2 1
+github.com/blucard/blucard/internal/backend/record.go:28.49,32.50 3 1
+github.com/blucard/blucard/internal/backend/record.go:38.2,38.64 1 1
+github.com/blucard/blucard/internal/backend/record.go:43.2,46.4 1 1
+github.com/blucard/blucard/internal/backend/record.go:32.50,36.3 3 0
+github.com/blucard/blucard/internal/backend/record.go:38.64,41.3 2 1
+github.com/blucard/blucard/cmd/blucard/main.go:17.13,19.16 2 0
+github.com/blucard/blucard/cmd/blucard/main.go:23.2,30.16 4 0
+github.com/blucard/blucard/cmd/blucard/main.go:34.2,34.12 1 0
+github.com/blucard/blucard/cmd/blucard/main.go:41.2,48.47 7 0
+github.com/blucard/blucard/cmd/blucard/main.go:51.2,51.35 1 0
+github.com/blucard/blucard/cmd/blucard/main.go:19.16,21.3 1 0
+github.com/blucard/blucard/cmd/blucard/main.go:30.16,32.3 1 0
+github.com/blucard/blucard/cmd/blucard/main.go:34.12,35.82 1 0
+github.com/blucard/blucard/cmd/blucard/main.go:35.82,37.4 1 0
+github.com/blucard/blucard/cmd/blucard/main.go:48.47,50.3 1 0
